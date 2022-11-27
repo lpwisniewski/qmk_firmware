@@ -25,17 +25,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN      D3
 
 #ifdef RGBLIGHT_ENABLE
-#    define RGBLED_NUM 54 // Number of LEDs
+#    define RGBLED_NUM 52 // Number of LEDs
 #    define RGBLED_SPLIT \
-        { 27, 27 }
+        { 25, 27 }
 #    define RGBLIGHT_SPLIT
 #endif
 
 #ifdef RGB_MATRIX_ENABLE
-#    define RGBLED_NUM       54 // Number of LEDs
+#    define RGBLED_NUM       52 // Number of LEDs
 #    define DRIVER_LED_TOTAL RGBLED_NUM
 #    define RGB_MATRIX_SPLIT \
-        { 27, 27 }
+        { 25, 27 }
 #    define SPLIT_TRANSPORT_MIRROR
 #endif
 
