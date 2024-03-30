@@ -56,7 +56,8 @@
 
 #define PLANCK_SOUND ED_NOTE(_E7), E__NOTE(_CS7), E__NOTE(_E6), E__NOTE(_A6), M__NOTE(_CS7, 20),
 
-#define PREONIC_SOUND M__NOTE(_B5, 20), E__NOTE(_B6), M__NOTE(_DS6, 20), E__NOTE(_B6),
+//#define PREONIC_SOUND M__NOTE(_B5, 20), E__NOTE(_B6), M__NOTE(_DS6, 20), E__NOTE(_B6),
+#define PREONIC_SOUND Q__NOTE(_C6), Q__NOTE(_A5), W__NOTE(_A5), Q__NOTE(_G5), Q__NOTE(_A5), Q__NOTE(_C6),
 
 #define QWERTY_SOUND E__NOTE(_GS6), E__NOTE(_A6), S__NOTE(_REST), Q__NOTE(_E7),
 
