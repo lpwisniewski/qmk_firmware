@@ -104,6 +104,17 @@ extern bool     glissando;
 extern bool     vibrato;
 extern uint16_t voices_timer;
 
+#ifndef SONG1
+#    define SONG1 SONG(PREONIC_SOUND)
+#endif
+
+#ifndef SONG2
+#    define SONG2 SONG(PREONIC_SOUND2)
+#endif
+
+float song1[][2]   = SONG1;
+float song2[][2]   = SONG2;
+
 #ifndef STARTUP_SONG
 #    define STARTUP_SONG SONG(STARTUP_SOUND)
 #endif
@@ -158,7 +169,13 @@ void audio_init(void) {
 
 void audio_startup(void) {
     if (audio_config.enable) {
-        PLAY_SONG(startup_song);
+        uint8_t r = rand();
+        r %= 2;
+        if (r == 0) {
+            PLAY_SONG(song2);
+        } else {
+            PLAY_SONG(song1);
+        }
     }
 
     last_timestamp = timer_read();
