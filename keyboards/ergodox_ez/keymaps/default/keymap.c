@@ -15,15 +15,15 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox(
 
-        KC_EQUAL,     KC_1,        KC_2,          KC_3,    KC_4,     KC_5,          KC_LEFT,                          
-        KC_TAB,       KC_Q,        KC_W,          KC_E,    KC_R,     KC_T,          KC_LEFT,                          
-        LT(1,KC_ESCAPE),KC_A,      KC_S,          KC_D,    KC_F,     KC_G,                                            
-        KC_LEFT_SHIFT,MT(MOD_LCTL, KC_Z),MT(MOD_LALT, KC_X),KC_C,KC_V,KC_B,         RALT(KC_LEFT_CTRL),               
-        LT(1,KC_GRAVE),KC_QUOTE,   KC_LEFT_ALT,   KC_LEFT, KC_BSPC,                                                   
+        KC_EQUAL,     KC_1,        KC_2,          KC_3,    KC_4,     KC_5,          KC_LEFT,
+        KC_TAB,       KC_Q,        KC_W,          KC_E,    KC_R,     KC_T,          KC_LEFT,
+        LT(1,KC_ESCAPE),KC_A,      KC_S,          KC_D,    KC_F,     KC_G,
+        KC_LEFT_SHIFT,MT(MOD_LCTL, KC_Z),MT(MOD_LALT, KC_X),KC_C,KC_V,KC_B,         RALT(KC_LEFT_CTRL),
+        LT(1,KC_GRAVE),KC_QUOTE,   KC_LEFT_ALT,   KC_LEFT, KC_BSPC,
 
-                                                                     ALT_T(KC_APP), KC_LGUI,              
-                                                                                    KC_HOME,              
-                                                           KC_SPC,   KC_BSPC,       KC_END,               
+                                                                     ALT_T(KC_APP), KC_LGUI,
+                                                                                    KC_HOME,
+                                                           KC_SPC,   KC_BSPC,       KC_END,
 
         KC_RGHT,       KC_6,     KC_7,     KC_8,     KC_9,     KC_0,               KC_MINUS,
         KC_INSERT,      KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,               KC_BSLS,
@@ -37,37 +37,37 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
   [1] = LAYOUT_ergodox(
-        KC_ESCAPE,    KC_F1,       KC_F2,         KC_F3,   KC_F4,    KC_F5,         KC_LEFT,              
-        KC_TRANSPARENT,KC_EXLM,    KC_AT,         KC_LCBR, KC_RCBR,  KC_HOME,       KC_TRANSPARENT,       
-                        KC_HASH,   KC_DLR,        KC_LPRN, KC_RPRN,  KC_END,        KC_TRANSPARENT,       
-        KC_TRANSPARENT, KC_PERC,   KC_CIRC,       KC_LBRC, KC_RBRC,  KC_TILD,       KC_TRANSPARENT,       
-        KC_TRANSPARENT, KC_EQUAL,  KC_TRANSPARENT,KC_TRANSPARENT,    KC_NO,                               
+        KC_ESCAPE,    KC_F1,       KC_F2,         KC_F3,   KC_F4,    KC_F5,         KC_LEFT,
+        KC_TRANSPARENT,KC_EXLM,    KC_AT,         KC_LCBR, KC_RCBR,  KC_HOME,       KC_TRANSPARENT,
+                        KC_TRNS,   KC_HASH,       KC_DLR,  KC_LPRN,  KC_RPRN,       KC_END,
+        KC_TRANSPARENT, KC_PERC,   KC_CIRC,       KC_LBRC, KC_RBRC,  KC_TILD,       KC_TRANSPARENT,
+        KC_TRANSPARENT, KC_EQUAL,  KC_TRANSPARENT,KC_TRANSPARENT,    KC_NO,
 
-                                                                     ALT_T(KC_APP), KC_LGUI,              
-                                                                                    KC_HOME,              
-                                                           KC_SPC,   KC_BSPC,       KC_END,               
+                                                                     ALT_T(KC_APP), KC_LGUI,
+                                                                                    KC_HOME,
+                                                           KC_SPC,   KC_BSPC,       KC_END,
 
         KC_RGHT,       KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,             KC_F11,
         KC_TRANSPARENT,KC_PAGE_UP,KC_7,    KC_8,     KC_9,     KC_ASTR,            KC_F12,
                        KC_PGDN,  KC_4,     KC_5,     KC_6,     KC_PLUS,            KC_TRANSPARENT,
         KC_TRANSPARENT,KC_AMPR,  KC_1,     KC_2,     KC_3,     KC_BSLS,            KC_TRANSPARENT,
                                  KC_NO,    KC_DOT,   KC_0,     KC_EQUAL,           KC_TRANSPARENT,
-                                                                                                       
+
         KC_LALT,    CTL_T(KC_ESC),
         KC_PGUP,
         KC_PGDN,    KC_RIGHT_GUI,        KC_ENTER
     ),
 
   [2] = LAYOUT_ergodox(
-        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,              
-        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_MS_UP,KC_TRNS,  KC_TRNS,       KC_TRNS,              
-                        KC_TRNS,   KC_MS_LEFT,    KC_MS_DOWN,KC_MS_RIGHT,KC_TRNS,   KC_TRNS,              
-        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,              
-        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_MS_BTN1,KC_MS_BTN2,                                  
+        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,
+        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_MS_UP,KC_TRNS,  KC_TRNS,       KC_TRNS,
+                        KC_TRNS,   KC_MS_LEFT,    KC_MS_DOWN,KC_MS_RIGHT,KC_TRNS,   KC_TRNS,
+        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_TRNS, KC_TRNS,  KC_TRNS,       KC_TRNS,
+        KC_TRNS,        KC_TRNS,   KC_TRNS,       KC_MS_BTN1,KC_MS_BTN2,
 
-                                                                     ALT_T(KC_APP), KC_LGUI,              
-                                                                                    KC_HOME,              
-                                                           KC_SPC,   KC_BSPC,       KC_END,               
+                                                                     ALT_T(KC_APP), KC_LGUI,
+                                                                                    KC_HOME,
+                                                           KC_SPC,   KC_BSPC,       KC_END,
 
 
         KC_TRNS,       KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,            QK_BOOT,
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT, KC_TRNS,            KC_MEDIA_PLAY_PAUSE,
         KC_TRNS,       KC_TRNS,  KC_TRNS,  KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK,KC_TRNS,KC_TRNS,
                                  KC_AUDIO_VOL_UP,KC_AUDIO_VOL_DOWN,KC_AUDIO_MUTE,  KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                                                       
+
         KC_LALT,    CTL_T(KC_ESC),
         KC_PGUP,
         KC_PGDN,    KC_RIGHT_GUI,        KC_ENTER
